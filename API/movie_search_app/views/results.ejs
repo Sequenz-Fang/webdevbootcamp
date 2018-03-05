@@ -1,0 +1,5 @@
+<h1>results page</h1>
+<!--after searching: get each title-->
+<% data.Search.forEach(function(movie){ %>
+    <li><%= movie.Title %> - <%=movie.Year%></li>
+<% }) %>
