@@ -36,6 +36,13 @@ app.get("/blogs", function(req, res){
         }
     });
 })
+
+// NEW ROUTE : Create route
+app.get("/blogs/new", function(req, res) {
+    res.render("new");
+    
+})
+
 app.listen(process.env.PORT, process.env.IP, function(){
     console.log("server has started");
 })
